@@ -13,8 +13,6 @@ public class Ukoly {
     private double min;
     private double max;
 
-
-
     public void vypisAhoj(){
         for (int i=1; i<=30; i++) {
             System.out.println("Ahoj nadsvěte!");
@@ -31,37 +29,20 @@ public class Ukoly {
         cislo1 = sc.nextInt();
         sc.nextLine();
 
-        if (cislo1 < 0) {
-            System.out.println("Je zadané záporné číslo");
-        }else if(cislo1 == 0){
-            System.out.println("0");
-        }else if (cislo1 >12){
-            System.out.println("Číslo je příliš velké");
-        }
-        else if(cislo1 == 1){
-            System.out.println("Jedna");
-        }else if(cislo1 == 2){
-            System.out.println("Dva");
-        }else if(cislo1 == 3){
-            System.out.println("Tři");
-        }else if(cislo1 == 4){
-            System.out.println("Čtyři");
-        }else if(cislo1 == 5){
-            System.out.println("Pět");
-        }else if(cislo1 == 6){
-            System.out.println("Šest");
-        }else if(cislo1 == 7){
-            System.out.println("Sedm");
-        }else if(cislo1 == 8){
-            System.out.println("Osm");
-        }else if(cislo1 == 9){
-            System.out.println("Devět");
-        }else if(cislo1 == 10){
-            System.out.println("Deset");
-        }else if(cislo1 == 11){
-            System.out.println("Jedenáct");
-        }else if(cislo1 == 12){
-            System.out.println("Dvanáct");
+        switch (cislo1){
+            case 1 -> System.out.println("Jedna");
+            case 2 -> System.out.println("Dva");
+            case 3 -> System.out.println("Tři");
+            case 4 -> System.out.println("Čtyři");
+            case 5 -> System.out.println("Pět");
+            case 6 -> System.out.println("Šest");
+            case 7 -> System.out.println("Sedm");
+            case 8 -> System.out.println("Osm");
+            case 9 -> System.out.println("Devět");
+            case 10 -> System.out.println("Deset");
+            case 11 -> System.out.println("Jedenáct");
+            case 12 -> System.out.println("Dvanáct");
+            default -> System.out.println("ČÍSLO JE PŘÍLIŠ VELKÉ NEBO JE ZÁPORNÉ");
         }
     }
 
